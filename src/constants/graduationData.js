@@ -162,7 +162,7 @@ export const GRADUATION_DATA = {
           {
             time: "Sau 10:00",
             event: "⭐ Thời điểm vàng: Anh em đến trường chụp ảnh kỷ niệm",
-            note: "Chụp ảnh cùng lễ phục cử nhân, hoa và bằng tốt nghiệp tại các góc check-in HUTECH Khu E.",
+            note: "Chụp ảnh cùng lễ phục Kỹ sư, hoa và bằng tốt nghiệp tại các góc check-in HUTECH Khu E.",
           },
           {
             time: "11:30 trở đi",

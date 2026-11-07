@@ -17,7 +17,7 @@ Website 3D kỷ niệm Lễ Tốt Nghiệp tương tác trực quan với hòn �
      - 4 cột mốc đáng nhớ suốt 4 năm đại học (Khởi đầu, Thử thách, Thực tập, Tốt nghiệp).
      - Lời cảm ơn ba mẹ, thầy cô, bạn bè & nút bắn pháo hoa giấy (confetti).
    - **Giai đoạn 2: Gợi Ý Địa Điểm Ăn Chơi Hôm Đó**  
-     - Gợi ý 3 tăng: *Tăng 1 (Ăn mừng/Lẩu nướng/Món Việt)*, *Tăng 2 (Cafe sống ảo áo cử nhân)*, *Tăng 3 (Karaoke/Boardgame/Pub)*.
+     - Gợi ý 3 tăng: *Tăng 1 (Ăn mừng/Lẩu nướng/Món Việt)*, *Tăng 2 (Cafe sống ảo áo Kỹ sư)*, *Tăng 3 (Karaoke/Boardgame/Pub)*.
      - Tích hợp sẵn khoảng giá, cự ly từ trường, điểm nổi bật và **nút 1-chạm mở Google Maps chỉ đường**.
      - Bí kíp ăn chơi tiện lợi cho ngày lễ.
    - **Giai đoạn 3: Kính Mời Bạn Bè Tham Dự & Kết Thúc**  

@@ -226,11 +226,10 @@ export default function StageDetailModal({ stage, onClose, onTriggerConfetti }) 
                   <button
                     key={idx}
                     onClick={() => setActiveTab(idx)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
-                      activeTab === idx
+                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${activeTab === idx
                         ? "bg-horizon text-white shadow-sm"
                         : "bg-gray-100 text-muted hover:text-ink"
-                    }`}
+                      }`}
                   >
                     Tăng {idx + 1}
                   </button>
@@ -318,7 +317,7 @@ export default function StageDetailModal({ stage, onClose, onTriggerConfetti }) 
                   THIỆP MỜI THÂN MẬT
                 </span>
                 <h4 className="text-lg sm:text-xl font-extrabold text-ink">
-                  Lễ Tốt Nghiệp Cử Nhân: {graduate.fullName}
+                  Lễ Tốt Nghiệp Kỹ sư: {graduate.fullName}
                 </h4>
                 <p className="text-xs sm:text-sm text-muted max-w-md mx-auto leading-relaxed">
                   {stage.modalContent.invitationText}
@@ -403,7 +402,7 @@ export default function StageDetailModal({ stage, onClose, onTriggerConfetti }) 
               <div className="p-4 sm:p-5 rounded-2xl bg-white border border-rule space-y-3">
                 <h5 className="font-bold text-sm text-ink flex items-center gap-1.5">
                   <Heart className="w-4 h-4 text-festive" />
-                  Gửi Lời Chúc Mừng Đến Cử Nhân 🎓
+                  Gửi Lời Chúc Mừng Đến Kỹ sư 🎓
                 </h5>
 
                 <form onSubmit={handleSendWish} className="space-y-2.5">

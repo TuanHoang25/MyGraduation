@@ -29,7 +29,7 @@ export function Island({
     // Cancel any active auto-rotation when user touches/clicks
     if (setTargetRotation) setTargetRotation(null);
 
-    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+    const clientX = event.clientX ?? (event.touches ? event.touches[0].clientX : 0);
     lastX.current = clientX;
   };
 
@@ -44,7 +44,7 @@ export function Island({
     if (!isRotating) return;
     event.stopPropagation();
 
-    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+    const clientX = event.clientX ?? (event.touches ? event.touches[0].clientX : 0);
     const delta = (clientX - lastX.current) / viewport.width;
 
     islandRef.current.rotation.y += delta * 0.012 * Math.PI;
@@ -93,15 +93,15 @@ export function Island({
     const keyUp = (e) => handlers.current.handleKeyUp(e);
 
     canvas.addEventListener("pointerdown", down);
-    canvas.addEventListener("pointerup", up);
-    canvas.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", up);
+    window.addEventListener("pointermove", move);
     window.addEventListener("keydown", keyDown);
     window.addEventListener("keyup", keyUp);
 
     return () => {
       canvas.removeEventListener("pointerdown", down);
-      canvas.removeEventListener("pointerup", up);
-      canvas.removeEventListener("pointermove", move);
+      window.removeEventListener("pointerup", up);
+      window.removeEventListener("pointermove", move);
       window.removeEventListener("keydown", keyDown);
       window.removeEventListener("keyup", keyUp);
     };

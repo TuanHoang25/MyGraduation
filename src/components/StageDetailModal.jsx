@@ -91,20 +91,23 @@ export default function StageDetailModal({ stage, onClose, onTriggerConfetti }) 
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal / Bottom Sheet Box */}
-      <div className="relative w-full sm:max-w-2xl max-h-[88vh] sm:max-h-[85vh] bg-white rounded-t-[32px] sm:rounded-3xl shadow-2xl border border-white/60 flex flex-col z-10 overflow-hidden animate-in slide-in-from-bottom duration-300">
+      <div className="relative w-full sm:max-w-2xl max-h-[90dvh] sm:max-h-[85vh] bg-white rounded-t-[28px] sm:rounded-3xl shadow-2xl border border-white/60 flex flex-col z-10 overflow-hidden animate-in slide-in-from-bottom duration-300">
+        {/* Mobile Drag Indicator Bar */}
+        <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mt-2 sm:hidden flex-shrink-0" />
+
         {/* Top Header */}
-        <div className="sticky top-0 bg-white/95 backdrop-blur-md px-6 py-4 border-b border-rule flex items-center justify-between z-20">
+        <div className="sticky top-0 bg-white/95 backdrop-blur-md px-5 sm:px-6 py-3.5 sm:py-4 border-b border-rule flex items-center justify-between z-20">
           <div className="flex items-center gap-2">
-            <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-sky-100 text-horizon uppercase tracking-wide">
+            <span className="px-2.5 py-0.5 rounded-full text-[10px] sm:text-[11px] font-bold bg-sky-100 text-horizon uppercase tracking-wide">
               {stage.badge}
             </span>
-            <h3 className="text-base sm:text-lg font-bold text-ink truncate max-w-[220px] sm:max-w-md">
+            <h3 className="text-sm sm:text-lg font-bold text-ink truncate max-w-[210px] sm:max-w-md">
               {stage.modalContent?.headline || stage.title}
             </h3>
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-muted hover:text-ink flex items-center justify-center transition-all"
+            className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-muted hover:text-ink flex items-center justify-center transition-all flex-shrink-0"
             aria-label="Đóng"
           >
             <X className="w-4 h-4" />
@@ -112,7 +115,7 @@ export default function StageDetailModal({ stage, onClose, onTriggerConfetti }) 
         </div>
 
         {/* Scrollable Content */}
-        <div className="overflow-y-auto px-5 sm:px-8 py-6 space-y-6">
+        <div className="overflow-y-auto overscroll-contain px-4 sm:px-8 py-5 sm:py-6 space-y-6 pb-[max(2.5rem,env(safe-area-inset-bottom))]">
           {/* ================= STAGE 1: CHÚC MỪNG LỄ TỐT NGHIỆP ================= */}
           {stage.id === 1 && (
             <div className="space-y-6">

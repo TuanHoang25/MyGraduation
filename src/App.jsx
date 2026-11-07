@@ -148,7 +148,7 @@ export default function App() {
   };
 
   return (
-    <main className="w-full h-[100svh] relative overflow-hidden bg-gradient-to-b from-[#b5e7ff] via-[#d7f1ff] to-[#f4faff] select-none">
+    <main className="w-full h-[100dvh] min-h-[100vh] relative overflow-hidden bg-gradient-to-b from-[#b5e7ff] via-[#d7f1ff] to-[#f4faff] select-none">
       {/* Top Header */}
       <Header
         isPlayingMusic={isPlayingMusic}
@@ -159,7 +159,7 @@ export default function App() {
       />
 
       {/* Floating Stage Info Card */}
-      <div className="absolute top-20 sm:top-24 left-0 right-0 z-20 flex items-center justify-center pointer-events-none">
+      <div className="absolute top-16 sm:top-24 left-0 right-0 z-20 flex items-center justify-center pointer-events-none">
         <div className="pointer-events-auto w-full">
           <StageCard
             currentStage={currentStage}
